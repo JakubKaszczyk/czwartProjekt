@@ -1,0 +1,8 @@
+<h3>Wszystkie samochody:</h3>
+<ol>
+  <li *ngFor = "let autko of samochodziki" >
+    <button type=""button (click)="wyswietl(autko)">
+    {{autko.opis}}</button>
+  </li>
+</ol>
+<app-szczegoly [samochodSzczegoly] = "wybraneAutko"></app-szczegoly>
